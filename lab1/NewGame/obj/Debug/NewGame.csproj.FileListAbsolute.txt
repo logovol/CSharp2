@@ -1,0 +1,7 @@
+D:\Csharp\2\lab1\NewGame\bin\Debug\NewGame.exe.config
+D:\Csharp\2\lab1\NewGame\bin\Debug\NewGame.exe
+D:\Csharp\2\lab1\NewGame\bin\Debug\NewGame.pdb
+D:\Csharp\2\lab1\NewGame\obj\Debug\NewGame.csprojAssemblyReference.cache
+D:\Csharp\2\lab1\NewGame\obj\Debug\NewGame.csproj.CoreCompileInputs.cache
+D:\Csharp\2\lab1\NewGame\obj\Debug\NewGame.exe
+D:\Csharp\2\lab1\NewGame\obj\Debug\NewGame.pdb
