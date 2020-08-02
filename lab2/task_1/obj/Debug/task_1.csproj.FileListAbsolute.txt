@@ -1,0 +1,7 @@
+D:\Study\GeekBrains\CSharp2\lab2\task_1\bin\Debug\task_1.exe.config
+D:\Study\GeekBrains\CSharp2\lab2\task_1\bin\Debug\task_1.exe
+D:\Study\GeekBrains\CSharp2\lab2\task_1\bin\Debug\task_1.pdb
+D:\Study\GeekBrains\CSharp2\lab2\task_1\obj\Debug\task_1.csprojAssemblyReference.cache
+D:\Study\GeekBrains\CSharp2\lab2\task_1\obj\Debug\task_1.csproj.CoreCompileInputs.cache
+D:\Study\GeekBrains\CSharp2\lab2\task_1\obj\Debug\task_1.exe
+D:\Study\GeekBrains\CSharp2\lab2\task_1\obj\Debug\task_1.pdb

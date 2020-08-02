@@ -1,0 +1,7 @@
+D:\Study\GeekBrains\CSharp2\lab2\task_3\bin\Debug\NewGame.exe.config
+D:\Study\GeekBrains\CSharp2\lab2\task_3\bin\Debug\NewGame.exe
+D:\Study\GeekBrains\CSharp2\lab2\task_3\bin\Debug\NewGame.pdb
+D:\Study\GeekBrains\CSharp2\lab2\task_3\obj\Debug\task_3.csproj.CoreCompileInputs.cache
+D:\Study\GeekBrains\CSharp2\lab2\task_3\obj\Debug\NewGame.exe
+D:\Study\GeekBrains\CSharp2\lab2\task_3\obj\Debug\NewGame.pdb
+D:\Study\GeekBrains\CSharp2\lab2\task_3\obj\Debug\task_3.csprojAssemblyReference.cache

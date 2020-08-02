@@ -1,0 +1,6 @@
+D:\Study\GeekBrains\CSharp2\lab2\task_5\bin\Debug\NewGame.exe.config
+D:\Study\GeekBrains\CSharp2\lab2\task_5\bin\Debug\NewGame.exe
+D:\Study\GeekBrains\CSharp2\lab2\task_5\bin\Debug\NewGame.pdb
+D:\Study\GeekBrains\CSharp2\lab2\task_5\obj\Debug\task_5.csproj.CoreCompileInputs.cache
+D:\Study\GeekBrains\CSharp2\lab2\task_5\obj\Debug\NewGame.exe
+D:\Study\GeekBrains\CSharp2\lab2\task_5\obj\Debug\NewGame.pdb
