@@ -1,0 +1,14 @@
+D:\Csharp\2\task_1\task_1\obj\Debug\task_1.csprojAssemblyReference.cache
+D:\Csharp\2\task_1\task_1\obj\Debug\task_1.csproj.CoreCompileInputs.cache
+D:\Csharp\2\task_1\task_1\bin\Debug\task_1.exe.config
+D:\Csharp\2\task_1\task_1\bin\Debug\task_1.exe
+D:\Csharp\2\task_1\task_1\bin\Debug\task_1.pdb
+D:\Csharp\2\task_1\task_1\obj\Debug\task_1.exe
+D:\Csharp\2\task_1\task_1\obj\Debug\task_1.pdb
+D:\Csharp\2\lab3\task_1\bin\Debug\task_1.exe.config
+D:\Csharp\2\lab3\task_1\bin\Debug\task_1.exe
+D:\Csharp\2\lab3\task_1\bin\Debug\task_1.pdb
+D:\Csharp\2\lab3\task_1\obj\Debug\task_1.csprojAssemblyReference.cache
+D:\Csharp\2\lab3\task_1\obj\Debug\task_1.csproj.CoreCompileInputs.cache
+D:\Csharp\2\lab3\task_1\obj\Debug\task_1.exe
+D:\Csharp\2\lab3\task_1\obj\Debug\task_1.pdb

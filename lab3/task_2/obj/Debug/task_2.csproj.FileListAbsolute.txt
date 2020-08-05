@@ -1,0 +1,6 @@
+D:\Csharp\2\lab3\task_2\bin\Debug\task_2.exe.config
+D:\Csharp\2\lab3\task_2\bin\Debug\task_2.exe
+D:\Csharp\2\lab3\task_2\bin\Debug\task_2.pdb
+D:\Csharp\2\lab3\task_2\obj\Debug\task_2.csproj.CoreCompileInputs.cache
+D:\Csharp\2\lab3\task_2\obj\Debug\task_2.exe
+D:\Csharp\2\lab3\task_2\obj\Debug\task_2.pdb
