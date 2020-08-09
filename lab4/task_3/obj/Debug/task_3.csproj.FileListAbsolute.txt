@@ -1,0 +1,7 @@
+D:\Csharp\2\lab4\task_3\bin\Debug\task_3.exe.config
+D:\Csharp\2\lab4\task_3\bin\Debug\task_3.exe
+D:\Csharp\2\lab4\task_3\bin\Debug\task_3.pdb
+D:\Csharp\2\lab4\task_3\obj\Debug\task_3.csprojAssemblyReference.cache
+D:\Csharp\2\lab4\task_3\obj\Debug\task_3.csproj.CoreCompileInputs.cache
+D:\Csharp\2\lab4\task_3\obj\Debug\task_3.exe
+D:\Csharp\2\lab4\task_3\obj\Debug\task_3.pdb
