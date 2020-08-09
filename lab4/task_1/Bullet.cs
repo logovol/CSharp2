@@ -9,6 +9,8 @@ namespace task_1
     class Bullet : BaseObject
     {
         public static event Log Damage;
+        public bool Del{get; set;}
+  
         public Bullet(Point pos, Point dir, Size size) : base(pos, dir, size)
         {
         }
@@ -17,8 +19,10 @@ namespace task_1
             Game.Buffer.Graphics.DrawRectangle(Pens.OrangeRed, Pos.X, Pos.Y, Size.Width, Size.Height);
         }
         public override void Update()
-        {            
+        {
             Pos.X = Pos.X + 20;
+            if (Pos.X > Game.Width)
+                Del = true;
         }
         public void Crash()
         {

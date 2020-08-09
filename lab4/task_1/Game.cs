@@ -104,7 +104,7 @@ namespace task_1
             Ship.MessageDie += Finish;
             Ship.Damage += WriteLog;
             Bullet.Damage += WriteLog;
-            Medecine.Health += WriteLog;
+            Medecine.Health += WriteLog;            
 
             //Load();
 
@@ -167,21 +167,32 @@ namespace task_1
 
         public static void Update()
         {
+            List<Bullet> bulletsDel = _bullets.FindAll(x => x.Del == true);
+            for (int index = 0; index < bulletsDel.Count; index++)
+            {                
+                _bullets.Remove(bulletsDel[index]);
+                bulletsDel[index] = null;
+            }
+            bulletsDel.Clear();
+
             foreach (BaseObject obj in _objs)
                 obj.Update();
             foreach (Bullet b in _bullets)
+            {                
                 b.Update();
+            }
             _med?.Update();
             for (var i = 0; i < _asteroids.Count; i++)
             {   
                 _asteroids[i].Update();
 
                 for (int j = 0; j < _bullets.Count && i >= 0; j++)
+                                        
                     if (_asteroids[i] != null && _bullets[j].Collision(_asteroids[i]))
                     {
-                        System.Media.SystemSounds.Hand.Play();
-                        //_asteroids[i] = null;
+                        System.Media.SystemSounds.Hand.Play();                        
                         _bullets[j].Crash();
+                        _bullets[j] = null;
                         _bullets.RemoveAt(j);
                         
                         _ship?.AddScore(5);
@@ -193,8 +204,7 @@ namespace task_1
                         if (_asteroids.Count == 0)
                         {
                             AddAsteroids();                         
-                        }
-                            
+                        }                            
 
                         continue;
                     }
@@ -241,7 +251,6 @@ namespace task_1
                     if (_asteroids.Count == 0)
                         AddAsteroids();
 
-
                     if (_ship.Energy <= 0)
                         _ship?.Die();
                 }
@@ -259,6 +268,11 @@ namespace task_1
         {
             log = $"{DateTime.Now} {s}";
             LogFileWriter(log);
+        }
+        private static void Delete(Object o)
+        {
+            o = null;
+            _bullets.Remove(o as Bullet);            
         }
 
         private static void LogFileWriter(string log)

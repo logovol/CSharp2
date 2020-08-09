@@ -5,6 +5,7 @@ namespace task_1
 {
     public delegate void Message();
     public delegate void Log(Object o, string message);
+    public delegate void Del(Object o);
 
     abstract class BaseObject : ICollision
     {
