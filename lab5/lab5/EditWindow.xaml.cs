@@ -33,7 +33,7 @@ namespace lab5
             Button btn = (Button)sender;
 
             bool result1 =  int.TryParse(tbAge.Text, out int resultAge);
-            bool result2 = double.TryParse(tbAge.Text, out double resultSalary);
+            bool result2 = double.TryParse(tbSalary.Text, out double resultSalary);
 
             if (result1 && result2 && cbDepartment.SelectedItem != null
                 && tbName.Text.Length > 0 && tbAge.Text.Length > 0 && tbSalary.Text.Length > 0)

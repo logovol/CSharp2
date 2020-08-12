@@ -50,6 +50,7 @@ namespace lab5
         
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Departments.SelectedItem = listDep[0];
             foreach (var dep in listDep)
             {
                 itemsD.Add(dep);
