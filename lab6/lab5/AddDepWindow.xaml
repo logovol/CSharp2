@@ -1,0 +1,16 @@
+﻿<Window x:Class="lab5.AddDepWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab5"
+        mc:Ignorable="d"
+           Title="EditWindow" Height="250" Width="450">
+    <Grid>
+        <Label Content="id" HorizontalAlignment="Left" Margin="74,42,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbID" IsReadOnly="True" HorizontalAlignment="Left" Height="20" Margin="158,48,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="74,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="20" Margin="158,78,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="186,124,0,0" VerticalAlignment="Top" Width="144" Height="33" Click="Button_ClickSave"/>
+    </Grid>
+</Window>
