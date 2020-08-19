@@ -1,0 +1,71 @@
+﻿<Window x:Class="lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab5"
+        mc:Ignorable="d"
+        Title="Работники организации" Height="757" Width="800" Loaded="Window_Loaded">
+    <Grid Margin="0,0,0,30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="283*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ComboBox x:Name="Departments" Margin="20,32,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" SelectionChanged="comboBox_SelectionChanged" Height="22"></ComboBox>
+
+        <ListView Name="lbEmployee"
+                  Height="206"
+                  Margin="20,75,0,0"                  
+                  SelectionMode="Single" 
+                  SelectionChanged="lbEmployee_SelectionChanged"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"                  
+                  Width="505">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Header="Name" Width="200" x:Name="Name"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=department}" Header="Department" Width="200" x:Name="Dep" />
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+
+        <StackPanel Grid.Column="1">
+            <Button x:Name="btn" Margin="0,100,0,0"  Click="Button_ClickEditRow" Grid.Column="1" Grid.ColumnSpan="2" >Редактировать запись</Button>
+            <Button x:Name="btnAddDepartment" Content="Добавить департамент" Click="Button_ClickAddDepartment"/>
+            <Button x:Name="btnAddEmployee" Content="Добавить работника" Click="Button_ClickAddEmployee"/>
+        </StackPanel>
+        <WrapPanel HorizontalAlignment="Left" Height="203" Margin="20,286,0,0" VerticalAlignment="Top" Width="505">
+            <DataGrid x:Name="EmployeeDataGrid" Grid.ColumnSpan="2" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" HorizontalAlignment="Center" IsReadOnly="True" Height="174" Width="505">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="idColumn" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="Auto"/>
+                    <DataGridTextColumn x:Name="NameColumn" Binding="{Binding Name}" Header="Имя" Width="Auto"/>
+                    <DataGridTextColumn x:Name="AgeColumn" Binding="{Binding Age}" Header="Возраст" Width="Auto"/>
+                    <DataGridTextColumn x:Name="DepartmentColumn" Binding="{Binding Department}" Header="Отдел" Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button x:Name="addButton" Content="Добавить" Grid.Column="0" Grid.Row="1" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center" Click="addButton_Click"/>
+            <Button x:Name="updateButton" Content="Изменить" Grid.Column="1" Grid.Row="1" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center" Click="updateButton_Click"/>
+            <Button x:Name="deleteButton" Content="Удалить" Grid.Column="2" Grid.Row="1" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center" Click="deleteButton_Click"/>
+
+        </WrapPanel>
+        <DataGrid x:Name="DepartmentDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" HorizontalAlignment="Left" IsReadOnly="True" Height="103" Margin="20,511,0,0" VerticalAlignment="Top" Width="505">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idColumn1" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="Auto"/>
+                <DataGridTextColumn x:Name="NameColumn1" Binding="{Binding Name}" Header="Имя" Width="Auto"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button x:Name="addButtonDep" Content="Добавить" Grid.Column="0" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,618,0,0" Click="addButtonDep_Click"/>
+        <Button x:Name="updateButtonDep" Content="Изменить" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="89,618,0,0" Click="updateButtonDep_Click"/>
+        <Button x:Name="deleteButtonDep" Content="Удалить" Width="70" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="158,618,0,0" Click="deleteButtonDep_Click"/>
+
+
+
+    </Grid>
+</Window>
